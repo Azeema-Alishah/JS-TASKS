@@ -30,17 +30,17 @@
           
                      //       TASK 3 Secret No.      //
           
-//var secretNumber = 3
-//var guessNumber = prompt("Guess the Secret No. from a Range of 1-10:")
-  //         console.log(secretNumber)
-//if ( guessNumber == secretNumber)
-  //             {alert("Congatulations! You have guessed the secret no")}
+// var secretNumber = 3
+// var guessNumber = prompt("Guess the Secret No. from a Range of 1-10:")
+//           console.log(secretNumber)
+// if ( guessNumber == secretNumber)
+//               {alert("Congatulations! You have guessed the secret no")}
           
-//else if (guessNumber > secretNumber )
-  //                {alert("Incorrect! Guess is too high, please try again")}
+// else if (guessNumber > secretNumber )
+//                  {alert("Incorrect! Guess is too high, please try again")}
           
-//if (guessNumber < secretNumber )
-  //                {alert("Incorrect! Guess is too low, please try again")}
+// if (guessNumber < secretNumber )
+//                  {alert("Incorrect! Guess is too low, please try again")}
           
           
                     //       TASK 4 Capitalized Case Name      //
@@ -52,41 +52,49 @@
 
                    //     Task 5 Contact Number and Name       //
 
-var contactNumber = []
-var contactNames = []
-var number =Number( prompt("Contact No.:"))
-   for (var i = 0; i <= number; i++)
-var name = prompt("Name:")
+const contactNumber = []
+const contactNames = []
 
+var contacts = Number(prompt("How many contacts you want to add: "))
+for(i = 0 ; i < contacts ; i++){
+    var name = prompt("Enter contact name: ")
+    var number = Number(prompt("Enter mobile no. : "))
+    contactNames.push(name)
+    contactNumber.push(number)
+}
+console.log(contactNames)
+console.log(contactNumber)
 
-
-          
 
 
                   //     Task 6 Array Item Removal       //
-var products = ["Ferarri" , "Mercedes" , "Tesla" , "Lamborghini", "BMW" , "Audi" , "Bugatti"];
+// var products = ["Ferarri" , "Mercedes" , "Tesla" , "Lamborghini", "BMW" , "Audi" , "Bugatti"];
 
 
 
                  //     Task 7 Eligibility Criteria to Vote      //
-var Nationality = prompt('Your Nationality:') 
-if (Nationality== "Pakistani" || Nationality=="Indian") 
-     { 
-          } 
-else {
-    alert('Ineligible to Vote')
-}  
-var Gender = prompt('Your Gender:')
-var Age = Number(prompt('Your Age:') )
-if (Gender == "Male" && Age == ">=18") {
-    alert('Eligible to Vote')
-}
-else (Age == "<18") 
-{
-    alert('Ineligible to Vote')
-}
 
-          
+// var nationality = prompt("Enter your nationality: ")
+// var gender = prompt("Enter gender")
+// var age = prompt("Enter age")
+
+// if (nationality === "pakistani" || nationality === "indian"){
+//     if(gender === "male" && age >= 18 ){
+//         alert("Eligible to vote")
+//     } else if (gender === "female" && age >= 18){
+//         var married = prompt("Are you married")
+//         if(married === "yes"){
+//             alert("Eligible to vote")
+//         } else if(married === "no"){
+//             alert("Ineligible to vote")
+//         }
+//     } else if(age< 18){
+//         alert("Ineligible to vote")
+//     }
+// } else{
+//     alert("Ineligible to vote")
+// }
+
 
 
                  //     Task 8 PCT for WC      //
